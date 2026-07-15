@@ -10,9 +10,9 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 
 import express from 'express';
 import cors from 'cors';
-import imageRoutes from './src/routes/imageRoutes.jss.js';
-import healthRoutes from './src/routes/healthRoutes.jss.js';
-import { errorHandler } from './src/middleware/errorHandler.jsr.js';
+import imageRoutes from '../Backend/src/routes/imageRoutes.js';
+import healthRoutes from '../Backend/src/routes/healthRoutes.jss.js';
+import { errorHandler } from '../Backend/src/middleware/errorHandler.jsr.js';
 
 const app = express();
 
